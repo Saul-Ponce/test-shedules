@@ -36,7 +36,7 @@ app.get("/segundos/:x", (req, res) => {
       );
 
       await fs.writeFileSync(
-        path.resolve(__dirname, new Date().getTime() + ".json"),
+        path.resolve(__dirname, new Date().getTime() + ".test.json"),
         JSON.stringify(data),
         { encoding: "utf-8" }
       );
